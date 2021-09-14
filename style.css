@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: scroll;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.header {
+    background-color: black;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 0;
+    z-index: 1;
+}
+.nav {
+    color: white;
+}
+.menu-item {
+    display: inline-table;
+    height: 45px;
+    line-height: 45px;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+}
+.menu-item:last-child {
+    position: relative;
+}
+.menu-item:last-child:hover {
+    color: black;
+}
+.menu-item:hover {
+    background-color: #ccc;
+}
+.menu-item:hover a {
+    color: black;
+}
+.menu-item:hover > .submenu{
+    display: block;
+}
+.menu .submenu {
+    position: absolute;
+    font-size: 0;
+    display: none;
+    background-color: #fff;
+}
+.submenu-item{
+    width: 128px;
+    font-size: 16px;
+    color: black;
+}
+.submenu-item:hover{
+    background-color: #ccc;
+}
+.search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    padding: 12px 24px;
+    height: 100%;
+    font-size: 20px;
+    color: white;
+}
+.search:hover {
+    background-color: red;
+}
+.content {
+}
+.slider {
+    margin-top: 45px;
+}
+.slider_item {
+    position: relative;
+    padding-top: 50%;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#slider_item-1 {
+    background-image: url('img/ny.jpeg');
+}
+#slider_item-2 {
+    background-image: url('img/chicago.jpeg');
+}
+#slider_item-3 {
+    background-image: url('img/la.jpeg');
+}
+.slider_item-img {
+    width: 100vw;
+}
+.slider_item-txt {
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    color: white;
+}
+.box {
+    margin: 0 250px;
+    text-align: center;
+}
+.info {
+    margin-top: 85px ;
+}
+.heading {
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+.title {
+    margin: 15px 0;
+    color: rgba(0, 0, 0, 0.5);
+    font-style: italic;
+}
+.info_txt {
+    text-align: justify;
+    font-size: 15px;
+}
+.band {
+    margin: 0 250px;
+    padding: 32px 0;
+}
+.person {
+    display: inline-table;
+    width: 250px;
+    height: 220px;
+}
+.person-name {
+    text-align: center;
+}
+.person-img {
+    width: 150px;
+    height: 150px;
+    margin: 15px 50px;
+    border-radius: 5px;
+}
+.tour {
+    width: 100%;
+    background-color: black;
+    margin-top: 45px;
+    padding: 64px 16px;
+}
+#tour-heading {
+    font-size: 30px;
+    color: white;
+}
+#tour-title{
+    color: #ccc;
+    margin: 15px 0;
+}
+.calendar {
+}
+.calendar-item {
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+.month {
+    color: rgb(130, 130, 130);
+}
+.badge {
+    color: white;
+    font-size: 15px;
+    padding: 0 8px;
+}
+.sold-out {
+    background-color: #F54336;
+}
+.remain {
+    background-color: black;
+    border-radius: 50%;
+    float: right;
+    margin-right: 5px;
+}
+.place-item {
+    width: 245px;
+    height: 370px;
+    background-color: white;
+    text-align: left;
+    background-clip:padding-box;
+    display: inline-table;
+}
+.place-image {
+    width: 100%;
+    height: 185px;
+}
+#new-york {
+    background-image: url('img/newyork.jpeg');
+}
+.place-body {
+    padding: 0px 15px;
+}
+.place-detail {
+    margin: 15px 0;
+}
+.detail-date {
+    color: rgb(130, 130, 130);
+}
+.place-btn {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.place-btn:hover {
+    background-color: #ccc;
+    color: black;
+}
